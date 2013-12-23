@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8345236184E20CE007667EB /* yelp.png in Resources */ = {isa = PBXBuildFile; fileRef = A8345235184E20CE007667EB /* yelp.png */; };
+		A849A7B7184114EF000E9CA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A849A7B6184114EF000E9CA5 /* Foundation.framework */; };
+		A849A7B9184114EF000E9CA5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A849A7B8184114EF000E9CA5 /* CoreGraphics.framework */; };
+		A849A7BB184114EF000E9CA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A849A7BA184114EF000E9CA5 /* UIKit.framework */; };
+		A849A7BD184114EF000E9CA5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A849A7BC184114EF000E9CA5 /* CoreData.framework */; };
+		A849A7C3184114EF000E9CA5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A849A7C1184114EF000E9CA5 /* InfoPlist.strings */; };
+		A849A7C5184114EF000E9CA5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A849A7C4184114EF000E9CA5 /* main.m */; };
+		A849A7C9184114EF000E9CA5 /* shopsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A849A7C8184114EF000E9CA5 /* shopsAppDelegate.m */; };
+		A849A7CC184114EF000E9CA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A849A7CA184114EF000E9CA5 /* Main.storyboard */; };
+		A849A7CF184114EF000E9CA5 /* Only_Indie_Coffee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A849A7CD184114EF000E9CA5 /* Only_Indie_Coffee.xcdatamodeld */; };
+		A849A7D2184114EF000E9CA5 /* shopsMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A849A7D1184114EF000E9CA5 /* shopsMasterViewController.m */; };
+		A849A7D5184114EF000E9CA5 /* shopsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A849A7D4184114EF000E9CA5 /* shopsDetailViewController.m */; };
+		A849A7D7184114EF000E9CA5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A849A7D6184114EF000E9CA5 /* Images.xcassets */; };
+		A849A7DE184114F0000E9CA5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A849A7DD184114F0000E9CA5 /* XCTest.framework */; };
+		A849A7DF184114F0000E9CA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A849A7B6184114EF000E9CA5 /* Foundation.framework */; };
+		A849A7E0184114F0000E9CA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A849A7BA184114EF000E9CA5 /* UIKit.framework */; };
+		A849A7E1184114F0000E9CA5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A849A7BC184114EF000E9CA5 /* CoreData.framework */; };
+		A849A7E9184114F0000E9CA5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A849A7E7184114F0000E9CA5 /* InfoPlist.strings */; };
+		A849A7EB184114F0000E9CA5 /* Only_Indie_CoffeeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A849A7EA184114F0000E9CA5 /* Only_Indie_CoffeeTests.m */; };
+		A849A7F5184115D1000E9CA5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A849A7F4184115D1000E9CA5 /* MapKit.framework */; };
+		A849A7FB18412919000E9CA5 /* Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = A849A7FA18412919000E9CA5 /* Shop.m */; };
+		A8D4BD83184A3D7400CC0801 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D4BD82184A3D7300CC0801 /* map.png */; };
+		A8F6020718674DE30029C4C2 /* foursquare.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F6020618674DE30029C4C2 /* foursquare.png */; };
+		A8F6020918675AAA0029C4C2 /* noimage.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F6020818675AAA0029C4C2 /* noimage.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A849A7E2184114F0000E9CA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A849A7AB184114EF000E9CA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A849A7B2184114EF000E9CA5;
+			remoteInfo = "Only Indie Coffee";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A8345235184E20CE007667EB /* yelp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yelp.png; sourceTree = "<group>"; };
+		A849A7B3184114EF000E9CA5 /* Only Indie Coffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Only Indie Coffee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A849A7B6184114EF000E9CA5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A849A7B8184114EF000E9CA5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A849A7BA184114EF000E9CA5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A849A7BC184114EF000E9CA5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A849A7C0184114EF000E9CA5 /* Only Indie Coffee-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Only Indie Coffee-Info.plist"; sourceTree = "<group>"; };
+		A849A7C2184114EF000E9CA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A849A7C4184114EF000E9CA5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A849A7C6184114EF000E9CA5 /* Only Indie Coffee-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Only Indie Coffee-Prefix.pch"; sourceTree = "<group>"; };
+		A849A7C7184114EF000E9CA5 /* shopsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shopsAppDelegate.h; sourceTree = "<group>"; };
+		A849A7C8184114EF000E9CA5 /* shopsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shopsAppDelegate.m; sourceTree = "<group>"; };
+		A849A7CB184114EF000E9CA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A849A7CE184114EF000E9CA5 /* Only_Indie_Coffee.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Only_Indie_Coffee.xcdatamodel; sourceTree = "<group>"; };
+		A849A7D0184114EF000E9CA5 /* shopsMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shopsMasterViewController.h; sourceTree = "<group>"; };
+		A849A7D1184114EF000E9CA5 /* shopsMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shopsMasterViewController.m; sourceTree = "<group>"; };
+		A849A7D3184114EF000E9CA5 /* shopsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shopsDetailViewController.h; sourceTree = "<group>"; };
+		A849A7D4184114EF000E9CA5 /* shopsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shopsDetailViewController.m; sourceTree = "<group>"; };
+		A849A7D6184114EF000E9CA5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A849A7DC184114F0000E9CA5 /* Only Indie CoffeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Only Indie CoffeeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A849A7DD184114F0000E9CA5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A849A7E6184114F0000E9CA5 /* Only Indie CoffeeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Only Indie CoffeeTests-Info.plist"; sourceTree = "<group>"; };
+		A849A7E8184114F0000E9CA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A849A7EA184114F0000E9CA5 /* Only_Indie_CoffeeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Only_Indie_CoffeeTests.m; sourceTree = "<group>"; };
+		A849A7F4184115D1000E9CA5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A849A7F918412919000E9CA5 /* Shop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shop.h; sourceTree = "<group>"; };
+		A849A7FA18412919000E9CA5 /* Shop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shop.m; sourceTree = "<group>"; };
+		A8D4BD82184A3D7300CC0801 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		A8F6020618674DE30029C4C2 /* foursquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foursquare.png; sourceTree = "<group>"; };
+		A8F6020818675AAA0029C4C2 /* noimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noimage.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A849A7B0184114EF000E9CA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A849A7B9184114EF000E9CA5 /* CoreGraphics.framework in Frameworks */,
+				A849A7BD184114EF000E9CA5 /* CoreData.framework in Frameworks */,
+				A849A7F5184115D1000E9CA5 /* MapKit.framework in Frameworks */,
+				A849A7BB184114EF000E9CA5 /* UIKit.framework in Frameworks */,
+				A849A7B7184114EF000E9CA5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A849A7D9184114F0000E9CA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A849A7DE184114F0000E9CA5 /* XCTest.framework in Frameworks */,
+				A849A7E1184114F0000E9CA5 /* CoreData.framework in Frameworks */,
+				A849A7E0184114F0000E9CA5 /* UIKit.framework in Frameworks */,
+				A849A7DF184114F0000E9CA5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A849A7AA184114EF000E9CA5 = {
+			isa = PBXGroup;
+			children = (
+				A849A7BE184114EF000E9CA5 /* Only Indie Coffee */,
+				A849A7E4184114F0000E9CA5 /* Only Indie CoffeeTests */,
+				A849A7B5184114EF000E9CA5 /* Frameworks */,
+				A849A7B4184114EF000E9CA5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A849A7B4184114EF000E9CA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A849A7B3184114EF000E9CA5 /* Only Indie Coffee.app */,
+				A849A7DC184114F0000E9CA5 /* Only Indie CoffeeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A849A7B5184114EF000E9CA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A849A7F4184115D1000E9CA5 /* MapKit.framework */,
+				A849A7B6184114EF000E9CA5 /* Foundation.framework */,
+				A849A7B8184114EF000E9CA5 /* CoreGraphics.framework */,
+				A849A7BA184114EF000E9CA5 /* UIKit.framework */,
+				A849A7BC184114EF000E9CA5 /* CoreData.framework */,
+				A849A7DD184114F0000E9CA5 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A849A7BE184114EF000E9CA5 /* Only Indie Coffee */ = {
+			isa = PBXGroup;
+			children = (
+				A849A7C7184114EF000E9CA5 /* shopsAppDelegate.h */,
+				A849A7C8184114EF000E9CA5 /* shopsAppDelegate.m */,
+				A849A7CA184114EF000E9CA5 /* Main.storyboard */,
+				A849A7F918412919000E9CA5 /* Shop.h */,
+				A849A7FA18412919000E9CA5 /* Shop.m */,
+				A849A7D0184114EF000E9CA5 /* shopsMasterViewController.h */,
+				A849A7D1184114EF000E9CA5 /* shopsMasterViewController.m */,
+				A849A7D3184114EF000E9CA5 /* shopsDetailViewController.h */,
+				A849A7D4184114EF000E9CA5 /* shopsDetailViewController.m */,
+				A849A7D6184114EF000E9CA5 /* Images.xcassets */,
+				A849A7CD184114EF000E9CA5 /* Only_Indie_Coffee.xcdatamodeld */,
+				A849A7BF184114EF000E9CA5 /* Supporting Files */,
+			);
+			path = "Only Indie Coffee";
+			sourceTree = "<group>";
+		};
+		A849A7BF184114EF000E9CA5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8F6020818675AAA0029C4C2 /* noimage.png */,
+				A8F6020618674DE30029C4C2 /* foursquare.png */,
+				A8345235184E20CE007667EB /* yelp.png */,
+				A8D4BD82184A3D7300CC0801 /* map.png */,
+				A849A7C0184114EF000E9CA5 /* Only Indie Coffee-Info.plist */,
+				A849A7C1184114EF000E9CA5 /* InfoPlist.strings */,
+				A849A7C4184114EF000E9CA5 /* main.m */,
+				A849A7C6184114EF000E9CA5 /* Only Indie Coffee-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A849A7E4184114F0000E9CA5 /* Only Indie CoffeeTests */ = {
+			isa = PBXGroup;
+			children = (
+				A849A7EA184114F0000E9CA5 /* Only_Indie_CoffeeTests.m */,
+				A849A7E5184114F0000E9CA5 /* Supporting Files */,
+			);
+			path = "Only Indie CoffeeTests";
+			sourceTree = "<group>";
+		};
+		A849A7E5184114F0000E9CA5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A849A7E6184114F0000E9CA5 /* Only Indie CoffeeTests-Info.plist */,
+				A849A7E7184114F0000E9CA5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A849A7B2184114EF000E9CA5 /* Only Indie Coffee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A849A7EE184114F0000E9CA5 /* Build configuration list for PBXNativeTarget "Only Indie Coffee" */;
+			buildPhases = (
+				A849A7AF184114EF000E9CA5 /* Sources */,
+				A849A7B0184114EF000E9CA5 /* Frameworks */,
+				A849A7B1184114EF000E9CA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Only Indie Coffee";
+			productName = "Only Indie Coffee";
+			productReference = A849A7B3184114EF000E9CA5 /* Only Indie Coffee.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A849A7DB184114F0000E9CA5 /* Only Indie CoffeeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A849A7F1184114F0000E9CA5 /* Build configuration list for PBXNativeTarget "Only Indie CoffeeTests" */;
+			buildPhases = (
+				A849A7D8184114F0000E9CA5 /* Sources */,
+				A849A7D9184114F0000E9CA5 /* Frameworks */,
+				A849A7DA184114F0000E9CA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A849A7E3184114F0000E9CA5 /* PBXTargetDependency */,
+			);
+			name = "Only Indie CoffeeTests";
+			productName = "Only Indie CoffeeTests";
+			productReference = A849A7DC184114F0000E9CA5 /* Only Indie CoffeeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A849A7AB184114EF000E9CA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = shops;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Damien Bell";
+				TargetAttributes = {
+					A849A7B2184114EF000E9CA5 = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					A849A7DB184114F0000E9CA5 = {
+						TestTargetID = A849A7B2184114EF000E9CA5;
+					};
+				};
+			};
+			buildConfigurationList = A849A7AE184114EF000E9CA5 /* Build configuration list for PBXProject "Only Indie Coffee" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A849A7AA184114EF000E9CA5;
+			productRefGroup = A849A7B4184114EF000E9CA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A849A7B2184114EF000E9CA5 /* Only Indie Coffee */,
+				A849A7DB184114F0000E9CA5 /* Only Indie CoffeeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A849A7B1184114EF000E9CA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8F6020918675AAA0029C4C2 /* noimage.png in Resources */,
+				A8D4BD83184A3D7400CC0801 /* map.png in Resources */,
+				A8345236184E20CE007667EB /* yelp.png in Resources */,
+				A8F6020718674DE30029C4C2 /* foursquare.png in Resources */,
+				A849A7D7184114EF000E9CA5 /* Images.xcassets in Resources */,
+				A849A7C3184114EF000E9CA5 /* InfoPlist.strings in Resources */,
+				A849A7CC184114EF000E9CA5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A849A7DA184114F0000E9CA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A849A7E9184114F0000E9CA5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A849A7AF184114EF000E9CA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A849A7D5184114EF000E9CA5 /* shopsDetailViewController.m in Sources */,
+				A849A7C9184114EF000E9CA5 /* shopsAppDelegate.m in Sources */,
+				A849A7C5184114EF000E9CA5 /* main.m in Sources */,
+				A849A7D2184114EF000E9CA5 /* shopsMasterViewController.m in Sources */,
+				A849A7CF184114EF000E9CA5 /* Only_Indie_Coffee.xcdatamodeld in Sources */,
+				A849A7FB18412919000E9CA5 /* Shop.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A849A7D8184114F0000E9CA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A849A7EB184114F0000E9CA5 /* Only_Indie_CoffeeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A849A7E3184114F0000E9CA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A849A7B2184114EF000E9CA5 /* Only Indie Coffee */;
+			targetProxy = A849A7E2184114F0000E9CA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A849A7C1184114EF000E9CA5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A849A7C2184114EF000E9CA5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A849A7CA184114EF000E9CA5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A849A7CB184114EF000E9CA5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A849A7E7184114F0000E9CA5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A849A7E8184114F0000E9CA5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A849A7EC184114F0000E9CA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A849A7ED184114F0000E9CA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A849A7EF184114F0000E9CA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Only Indie Coffee/Only Indie Coffee-Prefix.pch";
+				INFOPLIST_FILE = "Only Indie Coffee/Only Indie Coffee-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A849A7F0184114F0000E9CA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Only Indie Coffee/Only Indie Coffee-Prefix.pch";
+				INFOPLIST_FILE = "Only Indie Coffee/Only Indie Coffee-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A849A7F2184114F0000E9CA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Only Indie Coffee.app/Only Indie Coffee";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Only Indie Coffee/Only Indie Coffee-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Only Indie CoffeeTests/Only Indie CoffeeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A849A7F3184114F0000E9CA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Only Indie Coffee.app/Only Indie Coffee";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Only Indie Coffee/Only Indie Coffee-Prefix.pch";
+				INFOPLIST_FILE = "Only Indie CoffeeTests/Only Indie CoffeeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A849A7AE184114EF000E9CA5 /* Build configuration list for PBXProject "Only Indie Coffee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A849A7EC184114F0000E9CA5 /* Debug */,
+				A849A7ED184114F0000E9CA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A849A7EE184114F0000E9CA5 /* Build configuration list for PBXNativeTarget "Only Indie Coffee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A849A7EF184114F0000E9CA5 /* Debug */,
+				A849A7F0184114F0000E9CA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A849A7F1184114F0000E9CA5 /* Build configuration list for PBXNativeTarget "Only Indie CoffeeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A849A7F2184114F0000E9CA5 /* Debug */,
+				A849A7F3184114F0000E9CA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A849A7CD184114EF000E9CA5 /* Only_Indie_Coffee.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A849A7CE184114EF000E9CA5 /* Only_Indie_Coffee.xcdatamodel */,
+			);
+			currentVersion = A849A7CE184114EF000E9CA5 /* Only_Indie_Coffee.xcdatamodel */;
+			path = Only_Indie_Coffee.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A849A7AB184114EF000E9CA5 /* Project object */;
+}
