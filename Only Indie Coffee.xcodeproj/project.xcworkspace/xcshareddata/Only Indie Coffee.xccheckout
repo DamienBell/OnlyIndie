@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EE869386-F58B-4553-AD66-3862B29C1358</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Only Indie Coffee</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>11321150-EAB2-4711-A34A-48A1E34DC2F5</key>
+		<string>https://github.com/DamienBell/OnlyIndie.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Only Indie Coffee.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>11321150-EAB2-4711-A34A-48A1E34DC2F5</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/DamienBell/OnlyIndie.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>11321150-EAB2-4711-A34A-48A1E34DC2F5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>11321150-EAB2-4711-A34A-48A1E34DC2F5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Only Indie Coffee</string>
+		</dict>
+	</array>
+</dict>
+</plist>
