@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A8345236184E20CE007667EB /* yelp.png in Resources */ = {isa = PBXBuildFile; fileRef = A8345235184E20CE007667EB /* yelp.png */; };
-		A8366616187718CF00A4A7B3 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8366615187718CF00A4A7B3 /* StoreKit.framework */; };
 		A849A7B7184114EF000E9CA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A849A7B6184114EF000E9CA5 /* Foundation.framework */; };
 		A849A7B9184114EF000E9CA5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A849A7B8184114EF000E9CA5 /* CoreGraphics.framework */; };
 		A849A7BB184114EF000E9CA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A849A7BA184114EF000E9CA5 /* UIKit.framework */; };
@@ -46,7 +45,6 @@
 
 /* Begin PBXFileReference section */
 		A8345235184E20CE007667EB /* yelp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yelp.png; sourceTree = "<group>"; };
-		A8366615187718CF00A4A7B3 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		A849A7B3184114EF000E9CA5 /* Only Indie Coffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Only Indie Coffee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A849A7B6184114EF000E9CA5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A849A7B8184114EF000E9CA5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,7 +84,6 @@
 				A849A7B9184114EF000E9CA5 /* CoreGraphics.framework in Frameworks */,
 				A849A7BD184114EF000E9CA5 /* CoreData.framework in Frameworks */,
 				A849A7F5184115D1000E9CA5 /* MapKit.framework in Frameworks */,
-				A8366616187718CF00A4A7B3 /* StoreKit.framework in Frameworks */,
 				A849A7BB184114EF000E9CA5 /* UIKit.framework in Frameworks */,
 				A849A7B7184114EF000E9CA5 /* Foundation.framework in Frameworks */,
 			);
@@ -128,7 +125,6 @@
 		A849A7B5184114EF000E9CA5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A8366615187718CF00A4A7B3 /* StoreKit.framework */,
 				A849A7F4184115D1000E9CA5 /* MapKit.framework */,
 				A849A7B6184114EF000E9CA5 /* Foundation.framework */,
 				A849A7B8184114EF000E9CA5 /* CoreGraphics.framework */,
@@ -243,7 +239,7 @@
 						DevelopmentTeam = RH35ZLYLX7;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.iOS = {
 								enabled = 1;
@@ -436,8 +432,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Damien Bell (J59896HKS9)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Damien Bell (J59896HKS9)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Only Indie Coffee/Only Indie Coffee-Prefix.pch";
 				INFOPLIST_FILE = "Only Indie Coffee/Only Indie Coffee-Info.plist";
@@ -452,8 +448,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Damien Bell (J59896HKS9)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Damien Bell (J59896HKS9)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Only Indie Coffee/Only Indie Coffee-Prefix.pch";
 				INFOPLIST_FILE = "Only Indie Coffee/Only Indie Coffee-Info.plist";
