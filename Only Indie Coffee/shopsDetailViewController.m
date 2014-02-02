@@ -14,7 +14,7 @@
 @end
 
 @implementation shopsDetailViewController: UIViewController{
-    //IBOutlet UIImageView *ratings_image;
+ 
 }
 
 //over ride UIViewController method to prevend autoscrolling
@@ -29,22 +29,36 @@
     // Update the user interface for the detail item.
     self.navigationItem.title = _shop.name;
 
-    NSString *address= [NSString stringWithFormat:@"%@\n\n", _shop.name];
-    address= [address stringByAppendingString:[NSString stringWithFormat:@"%@\n", _shop.address]];
+    [self.shopNameLabel setText:[_shop name]];
+    
+    NSString *address= [NSString stringWithFormat:@"%@\n", _shop.address];
     address= [address stringByAppendingString:[NSString stringWithFormat:@"%@ %@ %@\n", _shop.city, _shop.state, _shop.zip]];
     
+    NSLog(@"%@", address);
     [self.address_text setText:address];
+    
     [self.review_text setText:_shop.review_snippet];
     
     self.address_text.allowsEditingTextAttributes= NO;
     [self.address_text setEditable:NO];
     
+    self.review_text.allowsEditingTextAttributes = NO;
+    [self.address_text setEditable:NO];
+    
+    NSString *distance = [NSString stringWithFormat:@"%@ miles",
+                          [NSString stringWithFormat:@"%.2f",[_shop.distanceInMiles doubleValue]]];
+    
+    UILabel *distancelabel;
+    distancelabel= (UILabel *)[self.view viewWithTag:5];
+    [distancelabel setText:distance];
+    
     UIImage *stars= _shop.ratings_image;
     [self.ratings_image setImage:stars];
     [self.num_reviews setText:[NSString stringWithFormat:@"%@ reviews", self.shop.review_count]];
     
-    [self.fourSquareButton setHidden:YES];
+    [self.thumbnail setImage:_shop.image];
     
+    [self.fourSquareButton setHidden:YES];
     [self checkFourSquareAvailable];
 }
 

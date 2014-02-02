@@ -10,13 +10,11 @@
 #import <CoreLocation/CoreLocation.h>
 #import "Shop.h"
 
-
 @interface shopsDetailViewController : UIViewController
 
 //passed from masterView
 @property(strong, nonatomic) Shop *shop;
 @property (nonatomic, retain) CLLocation *currentLocation;
-
 
 //url properties/functions
 @property (nonatomic, retain) NSMutableData *responseData;
@@ -26,7 +24,11 @@
 
 
 //view buttons/actions
+@property (weak, nonatomic) IBOutlet UILabel *shopNameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *thumbnail;
+
 @property (weak, nonatomic) IBOutlet UITextView *address_text;
+
 @property (weak, nonatomic) IBOutlet UITextView *review_text;
 @property (weak, nonatomic) IBOutlet UIImageView *ratings_image;
 @property (weak, nonatomic) IBOutlet UILabel *num_reviews;

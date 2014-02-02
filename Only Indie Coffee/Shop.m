@@ -58,6 +58,18 @@
     }
 }
 
+-(void)setLocalRating:(NSNumber *)rating{
+    
+   
+    NSString *url  = [NSString stringWithFormat:@"%@.png",[rating stringValue]];
+    NSLog(@"url: %@", url);
+    if([UIImage imageNamed:url]){
+        self.ratings_image = [UIImage imageNamed:url];
+    }else{
+        //empty image
+       self.ratings_image =[UIImage imageNamed:@"0.png"];
+    }
+}
 /** yelp functions **/
 
 - (BOOL)isYelpInstalled {

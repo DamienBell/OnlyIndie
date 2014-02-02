@@ -44,14 +44,7 @@
                                                  name: @"UIApplicationWillEnterForegroundNotification"
                                                object: nil];
     [self.view setBackgroundColor:[UIColor whiteColor]];
-	// Do any additional setup after loading the view, typically from a nib.
-    /*
-     //maybe make this an info button
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
-     */
 }
 
 - (void)didReceiveMemoryWarning
@@ -76,33 +69,56 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"ShopCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-    }
     // Configure the cell...
     Shop *current= [self.shops objectAtIndex:indexPath.row];
     
-    NSString *subtitle = [NSString stringWithFormat:@"%@ miles",
+    NSString *distance = [NSString stringWithFormat:@"%@ miles",
                           [NSString stringWithFormat:@"%.2f",[current.distanceInMiles doubleValue]]];
     
-    [[cell textLabel] setText:[current name]];
-    [[cell detailTextLabel] setText:subtitle];
+    //[[cell detailTextLabel] setText:subtitle];
+    /*
+    NSDictionary *attributes = @{
+                                 NSForegroundColorAttributeName: color,
+                                 NSFontAttributeName: [UIFont fontWithName:@"ProximaNovaBold" size:18.0f],
+                                 // NSShadowAttributeName: shadow
+                                 };
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:attributes];
+     */
+
+    UILabel *namelabel;
+    namelabel = (UILabel *)[cell viewWithTag:1];
+    namelabel.text= [current name];
     
     
+    UILabel *streetlabel;
+    streetlabel= (UILabel *)[cell viewWithTag:2];
+    streetlabel.text = [current address];
+    [streetlabel setFont:[UIFont fontWithName:@"ProximaNovaLightItalic" size:14.0f]];
+    
+    UILabel *distancelabel;
+    distancelabel= (UILabel *)[cell viewWithTag:5];
+    distancelabel.text= distance;
+    
+    UIImageView *ratingsImage;
+    
+    ratingsImage = (UIImageView *)[cell viewWithTag:3];
+
+    ratingsImage.image= [current ratings_image];
+    //[ratingsImage im]
     if(current.image){
-        cell.imageView.image = current.image;
+       // cell.imageView.image = current.image;
     }
    
-    
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     //uncomment beloew for manual seque trigger
-    [self performSegueWithIdentifier:@"showDetail" sender:nil];
+    //[self performSegueWithIdentifier:@"showDetail" sender:nil];
 }
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -125,7 +141,6 @@
    
     [dvc setShop:s];
     [dvc setCurrentLocation:self.currentLocation];
-    
 }
 
 
@@ -228,6 +243,7 @@
         [shop setDistanceInMiles:miles];
         
         //cache images in shop obj
+        
         id path = shop.image_url;
         NSURL *url = [NSURL URLWithString:path];
         NSData *data = [NSData dataWithContentsOfURL:url];
@@ -239,11 +255,11 @@
             [shop setImage:[UIImage imageNamed:@"noimage.png"]];
         }
       
-        path = [key objectForKey:@"rating_img_url"];
-        url =  [NSURL URLWithString:path];
-        data = [NSData dataWithContentsOfURL:url];
-        img = [[UIImage alloc] initWithData:data];
-        [shop setRatings_image:img];
+        NSNumber *rating= [key objectForKey:@"rating"];
+    
+        NSLog(@"nsnumber rating %@", rating);
+        
+        [shop setLocalRating:rating];
         
         [self.shops addObject:shop];
     }

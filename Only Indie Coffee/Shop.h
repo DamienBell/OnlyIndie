@@ -33,6 +33,7 @@
 @property (nonatomic, strong) NSString *yelp_reviews_url;
 @property (nonatomic, strong) NSString *yelp_id;
 @property (nonatomic, strong) UIImage *ratings_image;
+@property (nonatomic, strong) NSNumber *rating;
 @property (nonatomic, strong) NSString *review_snippet;
 @property (nonatomic, strong) NSString *review_count;
 @property (nonatomic, strong) NSString *url;
@@ -47,6 +48,7 @@
 -(void)openInMaps:(CLLocationCoordinate2D)from_coords;
 -(void)showInYelp;
 -(void)showInFourSquare;
+-(void)setLocalRating:(NSNumber *)rating;
 -(BOOL)isYelpInstalled;
 
 @end
