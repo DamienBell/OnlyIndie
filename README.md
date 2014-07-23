@@ -31,3 +31,6 @@ foursquare, yelp, or maps.
 * __AsyncImageGallery__: If we're able to get images from the api, then those
 images are rendered in a gallery on the __shopsDetailsViewController__. These images
 preload as they're swiped, and done so asynchronously to avoid locking up the UI.
+
+![screen shot one](https://github.com/DamienBell/OnlyIndie/tree/be0caf94635959d80eed5b6ddcc18275282137dc/photo1.PNG)
+![screen shot two](https://raw.github.com/DamienBell/OnlyIndie/master/photo2.PNG)
