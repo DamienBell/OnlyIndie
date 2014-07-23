@@ -7,8 +7,11 @@
 //
 
 #import "shopsAppDelegate.h"
-
 #import "shopsMasterViewController.h"
+
+/******* Set your tracking ID here *******/
+static NSString *const kTrackingId = @"UA-47671669-1";
+static NSString *const kAllowTracking = @"allowTracking";
 
 @implementation shopsAppDelegate
 
@@ -19,12 +22,22 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-   // UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-   // shopsMasterViewController *controller = (shopsMasterViewController *)navigationController.topViewController;
 
+    UIColor *greenish = [UIColor colorWithRed:110/255.0f green:193/255.0f blue:190/255.0f alpha:1.0f];
+    UIColor * color = [UIColor colorWithRed:58/255.0f green:124/255.0f blue:123/255.0f alpha:1.0f];
+    
+    [[UINavigationBar appearance] setBarTintColor:greenish];
+    [[UINavigationBar appearance] setBackgroundColor:greenish];
+    
+    NSDictionary *attributes = @{
+                                 NSForegroundColorAttributeName: color,
+                                 NSFontAttributeName: [UIFont fontWithName:@"ProximaNovaBold" size:18.0f]
+                                 };
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:attributes];
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
