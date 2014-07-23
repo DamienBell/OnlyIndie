@@ -33,6 +33,13 @@
 		A83B8FB8189ECDE0007A324D /* 4.5.png in Resources */ = {isa = PBXBuildFile; fileRef = A83B8FAD189ECDE0007A324D /* 4.5.png */; };
 		A83B8FB9189ECDE0007A324D /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = A83B8FAE189ECDE0007A324D /* 4.png */; };
 		A83B8FBA189ECDE0007A324D /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = A83B8FAF189ECDE0007A324D /* 5.png */; };
+		A83B8FBC189EE5C4007A324D /* Powered_By_Yelp_White.png in Resources */ = {isa = PBXBuildFile; fileRef = A83B8FBB189EE5C4007A324D /* Powered_By_Yelp_White.png */; };
+		A83B8FC5189F2020007A324D /* green_goole.png in Resources */ = {isa = PBXBuildFile; fileRef = A83B8FC2189F2020007A324D /* green_goole.png */; };
+		A83B8FC6189F2020007A324D /* green_map.png in Resources */ = {isa = PBXBuildFile; fileRef = A83B8FC3189F2020007A324D /* green_map.png */; };
+		A83B8FC7189F2020007A324D /* green_yelp.png in Resources */ = {isa = PBXBuildFile; fileRef = A83B8FC4189F2020007A324D /* green_yelp.png */; };
+		A83B8FCA189F25D1007A324D /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = A83B8FC9189F25D1007A324D /* facebook.png */; };
+		A83B8FCC189F25DF007A324D /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = A83B8FCB189F25DF007A324D /* twitter.png */; };
+		A83B8FCE189F2ACD007A324D /* green_foursquare.png in Resources */ = {isa = PBXBuildFile; fileRef = A83B8FCD189F2ACD007A324D /* green_foursquare.png */; };
 		A849A7B7184114EF000E9CA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A849A7B6184114EF000E9CA5 /* Foundation.framework */; };
 		A849A7B9184114EF000E9CA5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A849A7B8184114EF000E9CA5 /* CoreGraphics.framework */; };
 		A849A7BB184114EF000E9CA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A849A7BA184114EF000E9CA5 /* UIKit.framework */; };
@@ -53,6 +60,8 @@
 		A849A7EB184114F0000E9CA5 /* Only_Indie_CoffeeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A849A7EA184114F0000E9CA5 /* Only_Indie_CoffeeTests.m */; };
 		A849A7F5184115D1000E9CA5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A849A7F4184115D1000E9CA5 /* MapKit.framework */; };
 		A849A7FB18412919000E9CA5 /* Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = A849A7FA18412919000E9CA5 /* Shop.m */; };
+		A851118618B005CA00DA4AA0 /* AsyncImageGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = A851118518B005CA00DA4AA0 /* AsyncImageGallery.m */; };
+		A87B063918A5ADBB00A0BBBB /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A87B063818A5ADBB00A0BBBB /* AsyncImageView.m */; };
 		A8D4BD83184A3D7400CC0801 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D4BD82184A3D7300CC0801 /* map.png */; };
 		A8F6020718674DE30029C4C2 /* foursquare.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F6020618674DE30029C4C2 /* foursquare.png */; };
 		A8F6020918675AAA0029C4C2 /* noimage.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F6020818675AAA0029C4C2 /* noimage.png */; };
@@ -96,6 +105,13 @@
 		A83B8FAD189ECDE0007A324D /* 4.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.5.png; sourceTree = "<group>"; };
 		A83B8FAE189ECDE0007A324D /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		A83B8FAF189ECDE0007A324D /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		A83B8FBB189EE5C4007A324D /* Powered_By_Yelp_White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Powered_By_Yelp_White.png; sourceTree = "<group>"; };
+		A83B8FC2189F2020007A324D /* green_goole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_goole.png; sourceTree = "<group>"; };
+		A83B8FC3189F2020007A324D /* green_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_map.png; sourceTree = "<group>"; };
+		A83B8FC4189F2020007A324D /* green_yelp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_yelp.png; sourceTree = "<group>"; };
+		A83B8FC9189F25D1007A324D /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		A83B8FCB189F25DF007A324D /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		A83B8FCD189F2ACD007A324D /* green_foursquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_foursquare.png; sourceTree = "<group>"; };
 		A849A7B3184114EF000E9CA5 /* Only Indie Coffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Only Indie Coffee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A849A7B6184114EF000E9CA5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A849A7B8184114EF000E9CA5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -122,6 +138,10 @@
 		A849A7F4184115D1000E9CA5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A849A7F918412919000E9CA5 /* Shop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shop.h; sourceTree = "<group>"; };
 		A849A7FA18412919000E9CA5 /* Shop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shop.m; sourceTree = "<group>"; };
+		A851118418B005CA00DA4AA0 /* AsyncImageGallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageGallery.h; sourceTree = "<group>"; };
+		A851118518B005CA00DA4AA0 /* AsyncImageGallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageGallery.m; sourceTree = "<group>"; };
+		A87B063718A5ADBB00A0BBBB /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
+		A87B063818A5ADBB00A0BBBB /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
 		A8D4BD82184A3D7300CC0801 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		A8F6020618674DE30029C4C2 /* foursquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foursquare.png; sourceTree = "<group>"; };
 		A8F6020818675AAA0029C4C2 /* noimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noimage.png; sourceTree = "<group>"; };
@@ -191,6 +211,23 @@
 			name = ratings;
 			sourceTree = "<group>";
 		};
+		A83B8FC8189F24B6007A324D /* social */ = {
+			isa = PBXGroup;
+			children = (
+				A83B8FCD189F2ACD007A324D /* green_foursquare.png */,
+				A83B8FCB189F25DF007A324D /* twitter.png */,
+				A83B8FC9189F25D1007A324D /* facebook.png */,
+				A8D4BD82184A3D7300CC0801 /* map.png */,
+				A8345235184E20CE007667EB /* yelp.png */,
+				A8F6020618674DE30029C4C2 /* foursquare.png */,
+				A83B8F9F189D990D007A324D /* locationicon.png */,
+				A83B8FC2189F2020007A324D /* green_goole.png */,
+				A83B8FC3189F2020007A324D /* green_map.png */,
+				A83B8FC4189F2020007A324D /* green_yelp.png */,
+			);
+			name = social;
+			sourceTree = "<group>";
+		};
 		A849A7AA184114EF000E9CA5 = {
 			isa = PBXGroup;
 			children = (
@@ -226,9 +263,13 @@
 		A849A7BE184114EF000E9CA5 /* Only Indie Coffee */ = {
 			isa = PBXGroup;
 			children = (
+				A87B063718A5ADBB00A0BBBB /* AsyncImageView.h */,
+				A87B063818A5ADBB00A0BBBB /* AsyncImageView.m */,
 				A849A7C7184114EF000E9CA5 /* shopsAppDelegate.h */,
 				A849A7C8184114EF000E9CA5 /* shopsAppDelegate.m */,
 				A849A7CA184114EF000E9CA5 /* Main.storyboard */,
+				A851118418B005CA00DA4AA0 /* AsyncImageGallery.h */,
+				A851118518B005CA00DA4AA0 /* AsyncImageGallery.m */,
 				A849A7F918412919000E9CA5 /* Shop.h */,
 				A849A7FA18412919000E9CA5 /* Shop.m */,
 				A849A7D0184114EF000E9CA5 /* shopsMasterViewController.h */,
@@ -245,15 +286,13 @@
 		A849A7BF184114EF000E9CA5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A83B8FC8189F24B6007A324D /* social */,
+				A83B8FBB189EE5C4007A324D /* Powered_By_Yelp_White.png */,
 				A83B8FA4189EC86C007A324D /* ratings */,
 				A83B8FA2189EC81B007A324D /* coffeeholder.png */,
-				A83B8F9F189D990D007A324D /* locationicon.png */,
 				A83B8F9D189D77C1007A324D /* Login Screen.png */,
 				A83B8F86189C98EE007A324D /* Proxima Nova */,
 				A8F6020818675AAA0029C4C2 /* noimage.png */,
-				A8F6020618674DE30029C4C2 /* foursquare.png */,
-				A8345235184E20CE007667EB /* yelp.png */,
-				A8D4BD82184A3D7300CC0801 /* map.png */,
 				A849A7C0184114EF000E9CA5 /* Only Indie Coffee-Info.plist */,
 				A849A7C1184114EF000E9CA5 /* InfoPlist.strings */,
 				A849A7C4184114EF000E9CA5 /* main.m */,
@@ -325,7 +364,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = shops;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Damien Bell";
 				TargetAttributes = {
 					A849A7B2184114EF000E9CA5 = {
@@ -370,9 +409,12 @@
 			files = (
 				A8F6020918675AAA0029C4C2 /* noimage.png in Resources */,
 				A83B8F9E189D77C1007A324D /* Login Screen.png in Resources */,
+				A83B8FC5189F2020007A324D /* green_goole.png in Resources */,
 				A83B8F9A189C98EE007A324D /* ProximaNovaSemibold.otf in Resources */,
 				A83B8FB8189ECDE0007A324D /* 4.5.png in Resources */,
+				A83B8FCA189F25D1007A324D /* facebook.png in Resources */,
 				A8D4BD83184A3D7400CC0801 /* map.png in Resources */,
+				A83B8FBC189EE5C4007A324D /* Powered_By_Yelp_White.png in Resources */,
 				A83B8FB6189ECDE0007A324D /* 3.5.png in Resources */,
 				A83B8FB3189ECDE0007A324D /* 1.png in Resources */,
 				A83B8FA3189EC81B007A324D /* coffeeholder.png in Resources */,
@@ -386,6 +428,7 @@
 				A849A7D7184114EF000E9CA5 /* Images.xcassets in Resources */,
 				A83B8F99189C98EE007A324D /* ProximaNovaRegularItalic.otf in Resources */,
 				A83B8FB4189ECDE0007A324D /* 2.5.png in Resources */,
+				A83B8FC7189F2020007A324D /* green_yelp.png in Resources */,
 				A83B8F96189C98EE007A324D /* ProximaNovaLight.otf in Resources */,
 				A83B8FB5189ECDE0007A324D /* 2.png in Resources */,
 				A83B8F95189C98EE007A324D /* ProximaNovaBoldItalic.otf in Resources */,
@@ -393,10 +436,13 @@
 				A83B8FB0189ECDE0007A324D /* 0.5.png in Resources */,
 				A83B8F9C189C98EE007A324D /* ProximaNovaThin.otf in Resources */,
 				A849A7C3184114EF000E9CA5 /* InfoPlist.strings in Resources */,
+				A83B8FCC189F25DF007A324D /* twitter.png in Resources */,
 				A83B8F9B189C98EE007A324D /* ProximaNovaSemiboldItalic.otf in Resources */,
 				A849A7CC184114EF000E9CA5 /* Main.storyboard in Resources */,
+				A83B8FC6189F2020007A324D /* green_map.png in Resources */,
 				A83B8FB9189ECDE0007A324D /* 4.png in Resources */,
 				A83B8F98189C98EE007A324D /* ProximaNovaRegular.otf in Resources */,
+				A83B8FCE189F2ACD007A324D /* green_foursquare.png in Resources */,
 				A83B8FA0189D990D007A324D /* locationicon.png in Resources */,
 				A83B8F97189C98EE007A324D /* ProximaNovaLightItalic.otf in Resources */,
 				A83B8F94189C98EE007A324D /* ProximaNovaBold.otf in Resources */,
@@ -419,11 +465,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A849A7D5184114EF000E9CA5 /* shopsDetailViewController.m in Sources */,
+				A851118618B005CA00DA4AA0 /* AsyncImageGallery.m in Sources */,
 				A849A7C9184114EF000E9CA5 /* shopsAppDelegate.m in Sources */,
 				A849A7C5184114EF000E9CA5 /* main.m in Sources */,
 				A849A7D2184114EF000E9CA5 /* shopsMasterViewController.m in Sources */,
 				A849A7CF184114EF000E9CA5 /* Only_Indie_Coffee.xcdatamodeld in Sources */,
 				A849A7FB18412919000E9CA5 /* Shop.m in Sources */,
+				A87B063918A5ADBB00A0BBBB /* AsyncImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,7 +525,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -516,7 +563,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -580,7 +626,6 @@
 		A849A7F2184114F0000E9CA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Only Indie Coffee.app/Only Indie Coffee";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -603,7 +648,6 @@
 		A849A7F3184114F0000E9CA5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Only Indie Coffee.app/Only Indie Coffee";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

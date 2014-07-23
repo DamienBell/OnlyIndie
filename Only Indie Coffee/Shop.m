@@ -60,9 +60,8 @@
 
 -(void)setLocalRating:(NSNumber *)rating{
     
-   
     NSString *url  = [NSString stringWithFormat:@"%@.png",[rating stringValue]];
-    NSLog(@"url: %@", url);
+
     if([UIImage imageNamed:url]){
         self.ratings_image = [UIImage imageNamed:url];
     }else{

@@ -7,8 +7,11 @@
 //
 
 #import "shopsAppDelegate.h"
-
 #import "shopsMasterViewController.h"
+
+/******* Set your tracking ID here *******/
+static NSString *const kTrackingId = @"UA-47671669-1";
+static NSString *const kAllowTracking = @"allowTracking";
 
 @implementation shopsAppDelegate
 
@@ -22,22 +25,16 @@
 
     UIColor *greenish = [UIColor colorWithRed:110/255.0f green:193/255.0f blue:190/255.0f alpha:1.0f];
     UIColor * color = [UIColor colorWithRed:58/255.0f green:124/255.0f blue:123/255.0f alpha:1.0f];
-    NSShadow *shadow = [NSShadow new];
-    [shadow setShadowColor: [UIColor colorWithWhite:0.0f alpha:0.750f]];
-    [shadow setShadowOffset: CGSizeMake(0.0f, 1.0f)];
-    
     
     [[UINavigationBar appearance] setBarTintColor:greenish];
     [[UINavigationBar appearance] setBackgroundColor:greenish];
     
     NSDictionary *attributes = @{
                                  NSForegroundColorAttributeName: color,
-                                 NSFontAttributeName: [UIFont fontWithName:@"ProximaNovaBold" size:18.0f],
-                                // NSShadowAttributeName: shadow
+                                 NSFontAttributeName: [UIFont fontWithName:@"ProximaNovaBold" size:18.0f]
                                  };
     
     [[UINavigationBar appearance] setTitleTextAttributes:attributes];
-
     return YES;
 }
 

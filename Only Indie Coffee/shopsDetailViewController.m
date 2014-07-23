@@ -7,6 +7,8 @@
 //
 
 #import "shopsDetailViewController.h"
+#import "AsyncImageView.h"
+#import <Social/Social.h>
 
 @interface shopsDetailViewController ()
 - (void)configureView;
@@ -26,6 +28,8 @@
 
 - (void)configureView
 {
+    
+    //self.imageScroller.delegate = self;
     // Update the user interface for the detail item.
     self.navigationItem.title = _shop.name;
 
@@ -41,7 +45,8 @@
     
     self.address_text.allowsEditingTextAttributes= NO;
     [self.address_text setEditable:NO];
-    
+    [self.address_text setFont:[UIFont fontWithName:@"ProximaNovaLightItalic" size:14.0f]];
+
     self.review_text.allowsEditingTextAttributes = NO;
     [self.address_text setEditable:NO];
     
@@ -57,9 +62,9 @@
     [self.num_reviews setText:[NSString stringWithFormat:@"%@ reviews", self.shop.review_count]];
     
     [self.thumbnail setImage:_shop.image];
-    
     [self.fourSquareButton setHidden:YES];
-    [self checkFourSquareAvailable];
+    
+    [self checkFourSquareDetails];
 }
 
 - (void)viewDidLoad
@@ -75,7 +80,26 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+-(void)checkFourSquareDetails{
+    
+    NSLog(@"checking for foursquare details");
+    NSString *encoded_name = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
+                                                                                                   (CFStringRef)self.shop.name,
+                                                                                                   NULL,
+                                                                                                   CFSTR(":/=,!$& '()*+;[]@#?"),
+                                                                                                   kCFStringEncodingUTF8));
+    
+    NSString *api_query = [NSString stringWithFormat:@"http://onlyindie.herokuapp.com/api/foursquare/photos?ll=%@,%@&query=%@", self.shop.latitude, self.shop.longitude, encoded_name];
+    
+    NSLog(@"%@", api_query);
+    // Create the request.
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:api_query]];
+    
+    // Create url connection and fire request
+    NSURLConnection *conn = [[NSURLConnection alloc] init];
+    [self setFourSquareURLConnection:conn];
+    (void)[self.fourSquareURLConnection initWithRequest:request delegate:self];
+}
 -(void)checkFourSquareAvailable{
     
     NSLog(@"checking for foursquare");
@@ -93,8 +117,8 @@
     
     // Create url connection and fire request
     NSURLConnection *conn = [[NSURLConnection alloc] init];
-    [self setCheckFourSquareConnection:conn];
-    (void)[self.checkFourSquareConnection initWithRequest:request delegate:self];
+    [self setFourSquareURLConnection:conn];
+    (void)[self.fourSquareURLConnection initWithRequest:request delegate:self];
 }
 
 
@@ -124,18 +148,35 @@
     // You can parse the stuff in your instance variable now
     NSLog(@"connectionDidFinishLoading");
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:self.responseData options:NSJSONReadingMutableLeaves error:nil];
-    if (connection == self.checkFourSquareConnection){
+    if (connection == self.fourSquareURLConnection){
         
         NSString *foursquare_id= [json objectForKey:@"id"];
         NSString *foursquare_url= [json objectForKey:@"canonicalUrl"];
         
+        
+        
         if(foursquare_id){
+            //set foursquare details
             self.shop.foursquare_id= foursquare_id;
             self.shop.foursquare_url= foursquare_url;
+            [self.imageScroller setImages:[json objectForKey:@"photos"]];
+            
+            /*
+
+            }
+             */
+            
+            //set twitter/ facebook details
+            //set shop.website
+            //set phone details array
+            //set photos
+            
             [self.fourSquareButton setHidden:NO];
         }
+         
     }
 }
+
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
     
@@ -148,6 +189,87 @@
     [alert show];
 }
 /** end nsurl delegate **/
+/*
+ 
+ BOOL available= NO;
+ SLComposeViewController *socialViewController= nil;
+ 
+ NSDictionary *details= [pageDetails objectAtIndex:currentPageNumber-1];
+ NSString *title= [details objectForKey:@"title_string"];
+ 
+ switch (buttonIndex) {
+ 
+ case 0:
+ //facebook share
+ if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]){
+ NSLog(@"facebook is available");
+ available= YES;
+ 
+ socialViewController= [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+ [socialViewController setInitialText:[NSString stringWithFormat:@"Check out %@ from Dark Rye.", title]];
+ [socialViewController addURL:social_link];
+ [self presentViewController:socialViewController animated:YES completion:nil];
+ 
+ }else{
+ 
+ NSLog(@"facebook not available, link: %@", social_link);
+ }
+ break;
+ 
+ case 1:
+ //twitter share
+ if([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]){
+ NSLog(@"compose tweet");
+ available= YES;
+ 
+ socialViewController= [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+ [socialViewController setInitialText:[NSString stringWithFormat:@"Check out %@ from Dark Rye.", title]];
+ [socialViewController addURL:social_link];
+ 
+ [self presentViewController:socialViewController animated:YES completion:nil];
+ 
+ }else{
+ NSLog(@"twitter not available");
+ }
+ break;
+ 
+ case 2:
+ //email
+ if([MFMailComposeViewController canSendMail]){
+ 
+ available= YES;
+ NSLog(@"email is available");
+ 
+ MFMailComposeViewController *mailViewController = [[MFMailComposeViewController alloc] init];
+ mailViewController.mailComposeDelegate = self;
+ 
+ [mailViewController setSubject:title];
+ 
+ NSString *anchor_tag= [NSString stringWithFormat:@"<p>Check out this article from Dark Rye: </p><a href='%@'>%@</a>",
+ [social_link absoluteString],
+ title,
+ nil];
+ 
+ [mailViewController setMessageBody:anchor_tag isHTML:YES];
+ [self presentViewController:mailViewController animated:YES completion:nil];
+ [mailViewController release];
+ 
+ }else{
+ NSLog(@"email not available");
+ }
+ break;
+ 
+ default:
+ //cancelled
+ //we're going to flag this as available so we don't trigger the "service not available" modal
+ NSLog(@"cancelled share");
+ available= YES;
+ [socialViewController dismissViewControllerAnimated:YES completion:nil];
+ [socialViewController release];
+ 
+ break;
+ */
+
 
 //actions
 - (IBAction)open_in_yelp:(id)sender {
@@ -155,7 +277,6 @@
 }
 
 - (IBAction)open_in_map:(id)sender {
- 
     [self.shop openInMaps:[self.currentLocation coordinate]];
 }
 
@@ -163,4 +284,13 @@
     [self.shop showInFourSquare];
 }
 
+- (IBAction)initTweet:(id)sender {
+   
+    SLComposeViewController *socialViewController= nil;
+    
+    socialViewController= [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+    [socialViewController setInitialText:[NSString stringWithFormat:@"Check out %@ via.", _shop.name]];
+    //[socialViewController addURL:social_link];
+    [self presentViewController:socialViewController animated:YES completion:nil];
+}
 @end

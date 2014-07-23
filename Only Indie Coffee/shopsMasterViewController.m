@@ -43,8 +43,9 @@
                                              selector: @selector(handleEnterForeground:)
                                                  name: @"UIApplicationWillEnterForegroundNotification"
                                                object: nil];
+    
     [self.view setBackgroundColor:[UIColor whiteColor]];
-
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,7 +53,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 #pragma mark - Table View
 
@@ -77,21 +77,10 @@
     NSString *distance = [NSString stringWithFormat:@"%@ miles",
                           [NSString stringWithFormat:@"%.2f",[current.distanceInMiles doubleValue]]];
     
-    //[[cell detailTextLabel] setText:subtitle];
-    /*
-    NSDictionary *attributes = @{
-                                 NSForegroundColorAttributeName: color,
-                                 NSFontAttributeName: [UIFont fontWithName:@"ProximaNovaBold" size:18.0f],
-                                 // NSShadowAttributeName: shadow
-                                 };
-    
-    [[UINavigationBar appearance] setTitleTextAttributes:attributes];
-     */
 
     UILabel *namelabel;
     namelabel = (UILabel *)[cell viewWithTag:1];
     namelabel.text= [current name];
-    
     
     UILabel *streetlabel;
     streetlabel= (UILabel *)[cell viewWithTag:2];
@@ -107,10 +96,6 @@
     ratingsImage = (UIImageView *)[cell viewWithTag:3];
 
     ratingsImage.image= [current ratings_image];
-    //[ratingsImage im]
-    if(current.image){
-       // cell.imageView.image = current.image;
-    }
    
     return cell;
 }
@@ -125,7 +110,6 @@
     // Return NO if you do not want the specified item to be editable.
     return NO;
 }
-
 
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -145,7 +129,7 @@
 
 
 
-/****************   custom Methods ************************/
+/**************** Methods ************************/
 -(void)loadShops{
     NSLog(@"loading shops");
     self.shops = [[NSMutableArray alloc] init];
@@ -180,8 +164,8 @@
     
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableLeaves error:nil];
     NSDictionary *businesses = [json objectForKey:@"businesses"];
-    self.offset += [businesses count];
-    //TODO handle for empty set
+    self.offset += (int)[businesses count];
+    
     if(![businesses count]){
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle: @"Where's the shops?"
                                                        message: @"Didn't find any shops in your area. Suck. Try pulling to refresh"
@@ -256,8 +240,6 @@
         }
       
         NSNumber *rating= [key objectForKey:@"rating"];
-    
-        NSLog(@"nsnumber rating %@", rating);
         
         [shop setLocalRating:rating];
         
